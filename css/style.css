@@ -2,7 +2,10 @@
 
 :root {
     --primary-color: #047aed;
-    --secondary-color:#fff;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --white-color:#fff;
+    --light-color:#f4f4f4;
     
 }
 
@@ -43,7 +46,7 @@ img {
 /* Navbar  */
 .navbar {
   background-color: var(--primary-color) ;
-  color:var(--secondary-color);
+  color:var(--white-color);
   height:70px;
 }
 .navbar ul {
@@ -51,13 +54,13 @@ img {
 }
 .navbar a {
   /* background-color: red; */
-  color: var(--secondary-color);
+  color: var(--white-color);
   padding: 10px;
   margin: 0 5px;
 }
 
 .navbar a:hover {
-  border-bottom: 2px var(--secondary-color) solid;
+  border-bottom: 2px var(--white-color) solid;
 }
 .navbar .flex {
   
@@ -68,7 +71,7 @@ img {
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--white-color);
   position: relative;
 }
 
@@ -139,7 +142,7 @@ sudo s*/
  
  skewed  area : area torcida "sesgar"
    */
-  background: var(--secondary-color);
+  background: var(--white-color);
   transform: skewY(-3deg);
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
@@ -169,4 +172,48 @@ sudo s*/
   /* background-color: aquamarine; */
  font-size:  20px;
  font-weight: bold;
+}
+
+/* 
+Cli */
+.cli .grid {
+  /* background-color: red; */
+  /* 3 column */
+  grid-template-columns: repeat(3, 1fr);
+  /* two rows */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* Span abarcar two columns  the first child in html */
+.cli .grid > *:first-child {
+  /* abarcar 2 colums */
+ grid-column: 1 / span 2;
+ /* abarcar 2 rows */
+ grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.languages .card h4  {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  cursor:pointer;
+  transform: translateY(-15px);
 }
