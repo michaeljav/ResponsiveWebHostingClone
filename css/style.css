@@ -131,7 +131,7 @@ sudo s*/
 .showcase::before, .showcase::after {
   content: '';
   /*DENTRO DE RELATIVE DE ARRIBA EN .showcase */
-  /*como el padre de este  tiene un relative que su posicion es relativa al flow normal del html position absolute es relativa al padre que lo contiene.*/
+  /*como el padre de este  tiene un relative que su posicion es relativa al flow normal del html position absolute es relativa al padre que lo contiene. */
   position: absolute;
   height: 100px;  
   bottom: -70px;
