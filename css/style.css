@@ -109,9 +109,47 @@ img {
   font-size: 16px;
 }
 
+
+
+
+
 .showcase-form input:focus {
   outline: none;
 }
+
+/*slant --> inclinacion
+befor and after pseudo-selector classes
+
+skewed area
+sudo s*/
+.showcase {
+  background-color: green;
+}
+
+
+
+.showcase::before, .showcase::after {
+  content: '';
+  /*DENTRO DE RELATIVE DE ARRIBA EN .showcase */
+  /*como el padre de este  tiene un relative que su posicion es relativa al flow normal del html position absolute es relativa al padre que lo contiene.*/
+  position: absolute;
+  height: 100px;  
+  bottom: -70px;
+  right: 0;
+  left:0;
+  /* 
+ 
+ skewed  area : area torcida "sesgar"
+   */
+  background: var(--secondary-color);
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  
+}
+
+
 
 
 /* Utilities 
