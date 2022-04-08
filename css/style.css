@@ -149,9 +149,12 @@ img {
 
 .btn-outline {
   background-color: transparent;
+  border: 1px var(--secondary-color) solid;
 
-border: 1px var(--secondary-color) solid;
+}
 
+.btn:hover {
+  transform: scale(0.98);
 }
 
 .flex {
