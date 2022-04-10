@@ -401,7 +401,7 @@ Cli */
   }
 
   .navbar .flex {
-    flex-direction: column;
+    flex-direction: columns;
   }
 
   .navbar ul {
